@@ -114,7 +114,7 @@ Para o frontend da aplicação foram utilizadas as seguintes tecnologias:
 
 * Distribuição de veículos por fabricante
 
-![](https://github.com/vinicius-hso/challenge/blob/main/gifs/dashboard.gif)
+![](https://github.com/vinicius-hso/challenge/blob/blob/gifs/dashboard.gif)
 
 ### API Endpoints
 
