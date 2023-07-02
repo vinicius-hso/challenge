@@ -23,7 +23,7 @@ create table if not exists veiculos (
 	references marcas(id)
 );
 
-SELECT pg_sleep(5);
+SELECT pg_sleep(3);
 
 insert into marcas (nome, nacionalidade) 
 values
