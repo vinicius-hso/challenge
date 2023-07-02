@@ -1,0 +1,40 @@
+version: '3'
+
+services:  
+  postgres:
+    image: postgres
+    container_name: tinnova-challenge-db
+    environment:
+      - POSTGRES_DB=${DB_NAME}
+      - POSTGRES_USER=${DB_USER}
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
+    ports:
+      - '5432:5432'
+    volumes:
+      # - ./sql:/sql
+      # - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+      # - ./sql/init.sql:/docker-entrypoint-initdb.d/init.sql
+      - ./tinnova-challenge-back/sql/init.sql:/docker-entrypoint-initdb.d/init.sql
+    # networks:
+    #   - common-net
+
+  api:
+    environment:
+      - NODE_ENV=production
+    build:
+      context: ./tinnova-challenge-back
+      dockerfile: Dockerfile
+    volumes:
+      - ./tinnova-challenge-back/:/user/app
+    container_name: tinnova-challenge-api
+    expose:
+      - "3000"
+    ports:
+      - "3000:3000"
+    command: npm run dev
+    depends_on:
+      - postgres
+    # networks:
+    #   - common-net
+# networks:
+#   common-net: {}
