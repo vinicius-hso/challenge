@@ -1,6 +1,6 @@
 # tinnova-challenge
 
-Abaixo encontra-se a lista de items a serem implementados no desafio:
+Abaixo encontra-se a lista de items a serem implementados no desafio de acordo com o [documento disponibilizado](https://github.com/vinicius-hso/challenge/blob/main/docs/avaliacao_tinnova_2022.pdf):
 
 [x] 1. Votos em relação ao total de eleitores
 
