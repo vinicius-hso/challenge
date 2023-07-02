@@ -24,14 +24,6 @@ header {
   line-height: 1.5;
   max-height: 100vh;
   top: 0;
-  /* align-items: center;
-  text-align: center; */
-  /* justify-content: flex-start;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 999px; */
 }
 
 .logo {

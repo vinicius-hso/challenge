@@ -21,7 +21,7 @@ cd ./tinnova-challenge-algorithms
 
 npm install
 
-npm run dev
+npm run start
 ```
 
 Para acessar o código fonte:
@@ -87,3 +87,33 @@ Para o frontend da aplicação foram utilizadas as seguintes tecnologias:
 ![](https://img.shields.io/badge/Chart.js-FF6384?style=for-the-badge&logo=chartdotjs&logoColor=white)
 
 [Axios](https://axios-http.com/docs/intro)
+
+### Funcionalidades
+
+#### Adicionar veículo
+
+![](https://github.com/vinicius-hso/challenge/tree/main/gifs/create.gif)
+
+
+#### Editar veículo
+
+![](https://github.com/vinicius-hso/challenge/tree/main/gifs/edit.gif)
+
+
+#### Excluir veículo
+
+![](https://github.com/vinicius-hso/challenge/tree/main/gifs/delete.gif)
+
+#### Dashboard
+
+* Total de veículos não vendidos
+
+* Total de veículos adicionados na última semana
+
+* Distribuição de veículos por década de fabricação
+
+* Distribuição de veículos por fabricante
+
+![](https://github.com/vinicius-hso/challenge/tree/main/gifs/dashboard.gif)
+
+### API Endpoints

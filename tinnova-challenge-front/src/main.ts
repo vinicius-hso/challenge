@@ -18,7 +18,6 @@ app.use(
         presets: {
           light: {
             primary: "hsl(316, 64%, 35%)",
-            // myCoolColor: "#f00f0f",
           },
         },
       },
