@@ -12,7 +12,7 @@ const routes = Router();
 // routes.post("/login", colaboradorController.login);
 
 routes.use("/veiculos", veiculo);
-routes.use("/marcas", marca)
+routes.use("/marcas", marca);
 
 routes.use((req: Request, res: Response) =>
   res.status(404).json({ error: "Requisição desconhecida" })

@@ -1,0 +1,17 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const controllers_1 = require("../controllers");
+// import  } from "../middlewares";
+const routes = (0, express_1.Router)();
+// routes.post("/", authAdmin, cliente.create);
+// routes.put("/", authAdmin, cliente.update);
+// routes.delete("/", authAdmin, cliente.delete);
+// routes.get("/:status", cliente.list);
+routes.get("/", controllers_1.veiculoController.listAll);
+routes.get("/:id", controllers_1.veiculoController.getById);
+routes.post("/", controllers_1.veiculoController.create);
+routes.put("/:id", controllers_1.veiculoController.update);
+routes.patch("/:id", controllers_1.veiculoController.updatePatch);
+routes.delete("/:id", controllers_1.veiculoController.delete);
+exports.default = routes;

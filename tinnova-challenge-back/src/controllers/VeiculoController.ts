@@ -6,11 +6,11 @@ class VeiculoController {
   public async listAll(req: Request, res: Response): Promise<Response> {
     try {
       let { query } = req;
-      
-      query.marca = { nome: query.marca }
-      
+
+      query.marca = { nome: query.marca };
+
       const response: any = await AppDataSource.getRepository(Veiculo).find({
-        relations: ['marca'],
+        relations: ["marca"],
         where: query,
         order: {
           criado: "desc",
@@ -109,10 +109,7 @@ class VeiculoController {
         !descricao || descricao.trim() === ""
           ? foundVeiculo.descricao
           : descricao.trim();
-      foundVeiculo.vendido =
-        !vendido 
-          ? foundVeiculo.vendido
-          : vendido
+      foundVeiculo.vendido = !vendido ? foundVeiculo.vendido : vendido;
 
       const response = await AppDataSource.manager
         .save(Veiculo, foundVeiculo)
@@ -141,10 +138,11 @@ class VeiculoController {
       const marcaFound: any = await AppDataSource.getRepository(Marca).findOne({
         where: { nome: marca },
       });
-  
-      if (!marcaFound) return res.status(404).json({ message: "Marca inválida" }); 
 
-      req.body.marca = marcaFound.id
+      if (!marcaFound)
+        return res.status(404).json({ message: "Marca inválida" });
+
+      req.body.marca = marcaFound.id;
     }
 
     const response: any = await AppDataSource.manager
@@ -167,7 +165,7 @@ class VeiculoController {
     const veiculoFound: any = await AppDataSource.manager.findOneBy(Veiculo, {
       id,
     });
-    
+
     if (veiculoFound && veiculoFound.id) {
       const response = await AppDataSource.manager
         .remove(Veiculo, veiculoFound)
