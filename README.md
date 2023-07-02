@@ -3,9 +3,13 @@
 Abaixo encontra-se a lista de items a serem implementados no desafio:
 
 [x] 1. Votos em relação ao total de eleitores
+
 [x] 2. Algoritmo de ordenação Bubble Sort
+
 [x] 3. Fatorial
+
 [x] 4. Soma dos múltiplos de 3 ou 5
+
 [x] 5. Cadastro de veículos
 
 ### Excutando 
