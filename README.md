@@ -118,3 +118,54 @@ Para o frontend da aplicação foram utilizadas as seguintes tecnologias:
 
 ### API Endpoints
 
+#### Veículos
+
+> GET /veiculos 
+
+*retorna todos os veículos*
+
+![](https://github.com/vinicius-hso/challenge/blob/main/gifs/list-all.gif)
+
+> GET /veiculos?marca={marca}&ano={ano}&cor={cor}
+
+*retorna todos os veículos de acordo com os parâmetros passados*
+
+![](https://github.com/vinicius-hso/challenge/blob/main/gifs/list-all-by-query.gif)
+
+> GET /veiculos/{id}
+
+*retorna os detalhes do veículo*
+
+![](https://github.com/vinicius-hso/challenge/blob/main/gifs/get-by-id.gif)
+
+> POST /veiculos 
+
+*adiciona um novo veículo*
+
+![](https://github.com/vinicius-hso/challenge/blob/main/gifs/create-veiculo.gif)
+
+> PUT /veiculos/{id}
+
+*atualiza os dados do veículo*
+
+![](https://github.com/vinicius-hso/challenge/blob/main/gifs/put.gif)
+
+> PATCH /veiculos/{id}
+
+*atualiza apenas alguns dados do veículo*
+
+![](https://github.com/vinicius-hso/challenge/blob/main/gifs/patch.gif)
+
+> DELETE /veiculos/{id}
+
+*apaga o veículo*
+
+![](https://github.com/vinicius-hso/challenge/blob/main/gifs/put.gif)
+
+#### Marcas
+
+> GET /marcas
+
+*retorna todas as marcas de veículos*
+
+![](https://github.com/vinicius-hso/challenge/blob/main/gifs/marcas.gif)
