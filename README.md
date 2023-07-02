@@ -92,17 +92,17 @@ Para o frontend da aplicação foram utilizadas as seguintes tecnologias:
 
 #### Adicionar veículo
 
-![](https://github.com/vinicius-hso/challenge/tree/main/gifs/create.gif)
+![](https://github.com/vinicius-hso/challenge/blob/main/gifs/create.gif)
 
 
 #### Editar veículo
 
-![](https://github.com/vinicius-hso/challenge/tree/main/gifs/edit.gif)
+![](https://github.com/vinicius-hso/challenge/blob/main/gifs/edit.gif)
 
 
 #### Excluir veículo
 
-![](https://github.com/vinicius-hso/challenge/tree/main/gifs/delete.gif)
+![](https://github.com/vinicius-hso/challenge/blob/main/gifs/delete.gif)
 
 #### Dashboard
 
@@ -114,6 +114,7 @@ Para o frontend da aplicação foram utilizadas as seguintes tecnologias:
 
 * Distribuição de veículos por fabricante
 
-![](https://github.com/vinicius-hso/challenge/tree/main/gifs/dashboard.gif)
+![](https://github.com/vinicius-hso/challenge/blob/main/gifs/dashboard.gif)
 
 ### API Endpoints
+
